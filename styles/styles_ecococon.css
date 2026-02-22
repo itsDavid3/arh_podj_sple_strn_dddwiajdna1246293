@@ -1,0 +1,48 @@
+/* MAIN */
+main section.banner {
+  background-image: url("/assets/ecococon_home_2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 720px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 100px;
+
+
+  div.box-banner {
+    width: 600px;
+    height: 290px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--compliment);
+
+    * {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: var(--dominant);
+    }
+
+    h4 {
+      color: var(--gray-1);
+      line-height: 25px;
+      
+    }
+  }
+}
+
+main section.sistem {
+  min-height: 900px;
+  padding: 45px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  div.header {
+    text-align: center;
+    padding: 15px;
+  }
+}
+/* -- -- */ 

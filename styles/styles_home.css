@@ -1,0 +1,160 @@
+/* MAIN */
+main section div.header {
+  text-align: center;
+  padding: 15px;
+}
+
+
+main section.banner {
+  background-image: url("/assets/CAM11228K.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 720px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 100px;
+
+
+  div.box-banner {
+    width: 500px;
+    height: 290px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--compliment);
+
+    * {
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      color: var(--dominant);
+    }
+
+    h4 {
+      color: var(--gray-1);
+      line-height: 25px;
+      
+    }
+  }
+}
+
+
+main section.ponudba {
+  min-height: 900px;
+  padding: 45px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  div.gallery {
+    margin: 0px 10px 50px 10px;
+    ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    ul li {
+      list-style-type: none;
+      text-align: center;
+    }
+  }
+}
+
+
+main section.kontakt {
+  min-height: 1000px;
+  padding: 45px 25px;
+  background-color: var(--compliment);
+  
+  div.kontakt-podatki {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin: 50px 25px;
+
+    ul li {
+      list-style-type: none;
+      display: flex;
+      gap: 25px;
+
+      img {
+        width: 30px;
+        padding: 5px 0px 0px 0px;
+      }
+
+      p {
+        font-weight: 400;
+        margin: 5px 0px 0px 0px;
+      }
+    }
+
+    ul li:not(:last-child) {
+      margin: 0px 0px 30px 0px;
+    }
+
+    form {
+      border-left: 1px solid var(--gray-1);
+      padding: 0px 0px 0px 70px;
+
+      label {
+        font-size: 0.9rem;
+      }
+
+      input {
+        width: 400px;
+        margin: 5px 0px 5px 0px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid var(--gray-2);
+      }
+
+      input[type="tel"] {
+        width: 310px;
+      }
+      input[id="Telefon-country"] {
+        width: 85px;
+      }
+
+      textarea {
+        width: 400px;
+        margin: 5px 0px 5px 0px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid var(--gray-2);
+      }
+    }
+  }
+}
+
+
+main section.about {
+  min-height: 660px;
+  padding: 45px 25px;
+
+  div.about-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    img {
+      width: 350px;
+      height: 450px;
+    }
+
+    div.about-text {
+      width: 500px;
+      padding: 50px;
+
+      p {
+        font-weight: 400;
+        margin: 0px 0px 30px 0px;
+      }
+    }
+  }
+}
+
+/* -- -- */

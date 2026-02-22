@@ -1,0 +1,265 @@
+/* -- START OF BASE STYLES -- */
+
+/* Theme stuff */
+:root {
+  --dominant: #7EB376;
+  --compliment: #FFF6EB;
+  --accent: #C9E8C4;
+  --gray-1: #666666;
+  --gray-2: #9F9F9F;
+}
+/* -- -- */
+
+*, 
+*::before, 
+*::after {
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 1rem;
+}
+
+a {
+  text-decoration: underline transparent;
+  transition: text-decoration 300ms ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+b {
+  font-weight: 700;
+}
+
+h1 {
+  font-weight: bold;
+  line-height: 40px;
+}
+
+h3 {
+  font-weight: 400;
+  color: var(--gray-1)
+}
+
+h4 {
+  font-weight: 400;
+  color: var(--gray-1)
+}
+
+.button-type-1 {
+  padding: 20px 100px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: bold;
+  background-color: var(--dominant);
+  font-size: 1.1rem;
+}
+
+.button-type-2 {
+  padding: 25px 70px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: bold;
+  background-color: var(--accent);
+}
+
+.button-type-3 {
+  padding: 10px 70px;
+  border-radius: 10px;
+  border: 0;
+  font-weight: 600;
+  background-color: var(--dominant);
+  font-size: 1rem;
+}
+
+.img-type-1 {
+  width: 380px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+
+.img-type-2 {
+  width: 430px;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 20px 10px;
+}
+
+/* -- END OF BASE STYLES -- */
+
+
+/* NAVIGATION */
+nav {
+  height: 100px;
+  width: 100vw;
+  padding: 15px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--dominant);
+
+
+  img.logo-black {
+    width: 150px;
+  }
+}
+
+nav ul.menu li {
+  display: inline;
+  padding: 15px;
+}
+
+nav ul.languge-picker li {
+  display: inline;
+  padding: 5px;
+
+
+  img {
+    width: 25px;
+    border-radius: 5px;
+  }
+}
+
+/* -- -- */
+
+
+/* FOOTER */
+footer.footer-type-1 {
+  min-height: 380px;
+  background-color: var(--compliment);
+  padding: 0px 100px;
+  border-top: 1px solid var(--gray-1);
+
+
+  div.footer-group-1 {
+    padding: 50px 50px 20px 0px;
+    border-bottom: 1px solid var(--gray-2);
+    display: flex;
+    flex-wrap: wrap;
+
+    div.footer-group-left {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+  
+      div.group-left-1 {
+        img.logo-green {
+          width: 150px;
+        }
+        
+        p {
+          text-align: right;
+          padding: 15px 0px 0px 0px;
+          font-size: 0.9rem;
+          color: var(--gray-2);
+        }
+      }
+  
+      div.group-left-2 {
+        img.map {
+          width: 230px;
+        }
+      }
+    }
+  
+
+    div.footer-group-right {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      min-width: 270px;
+
+      ul li {
+        list-style-type: none;
+        margin: 20px 0px;
+      }
+    }
+  }
+
+
+
+  div.footer-group-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.9rem;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+footer.footer-type-2 {
+  min-height: 280px;
+  background-color: var(--compliment);
+  padding: 0px 100px;
+  border-top: 1px solid var(--gray-1);
+
+
+  div.footer-group-1 {
+    padding: 30px 50px 20px 0px;
+    border-bottom: 1px solid var(--gray-2);
+    display: flex;
+    flex-wrap: wrap;
+
+    div.footer-group-left { 
+      img.logo-green {
+        width: 250px;
+      }
+    }
+  
+
+    div.footer-group-right {
+      flex: 1;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-evenly;
+      min-width: 270px;
+
+      ul li {
+        list-style-type: none;
+        margin: 20px 0px;
+      }
+    }
+  }
+
+  div.footer-group-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.9rem;
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+/* -- -- */
